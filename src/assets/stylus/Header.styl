@@ -1,0 +1,49 @@
+/**
+ * Created by zengwei on 2017/9/1
+ */
+
+@import "variables.styl"
+
+.header::after
+  content ''
+  display block
+  clear both
+
+.header
+  width 100%
+  height 40px
+  background-color: #000;
+  position fixed
+  left 0
+  top 0
+  z-index 100
+  .left_header
+    float: left;
+    margin-left 5px
+    margin-top 5px
+    img
+      width 30px
+      display: inline-block
+      vertical-align middle
+    h3
+      display inline-block
+      color #fff
+      vertical-align: middle
+      margin-left 10px
+      font-size 16px
+  .right_header
+    float: right
+    ul
+      overflow: hidden
+      li
+        float: left;
+        height: 40px
+        line-height: 30px
+        padding 5px 10px
+        font-size 13px
+        color #aaa
+        cursor pointer
+        transition $transition
+        margin 0 10px
+      li:hover
+        color #fff

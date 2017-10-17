@@ -1,0 +1,52 @@
+/**
+ * Created by zengwei on 2017/9/1
+ */
+
+//@import "variables.styl"
+
+.side
+  width 40px
+  background-color: #000;
+  color #aaa
+  text-align center
+  font-size 20px
+  position: fixed;
+  left:0
+  top 40px
+  z-index 100
+  > ul
+    > li:hover
+      color #fff
+    > li:hover >ul
+      left 40px
+      opacity 1
+      visibility visible
+    > li
+      padding 10px 0
+      transition $transition
+      border-top 1px solid #aaa
+      cursor pointer
+      position relative
+      ul
+        position absolute
+        left 0
+        top 0
+        opacity 0
+        visibility hidden
+        background: #000
+        transition all 300ms ease
+        li:first-child
+          font-size 14px
+          color #fff
+          padding 8px 10px
+        li
+          white-space nowrap
+          padding 6px 10px
+          text-align left
+          font-size 13px
+          border-top 1px solid #aaa
+          color #aaa
+          transition $transition
+        li:not(:first-child):hover
+          color #fff
+          transform scale(1.05)

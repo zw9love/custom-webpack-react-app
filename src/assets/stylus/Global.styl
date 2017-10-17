@@ -1,0 +1,64 @@
+
+@import "variables.styl"
+*, *:before, *:after
+  margin: 0
+  padding: 0
+  list-style none
+  box-sizing: border-box
+
+
+html
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-x hidden
+
+
+
+body
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x hidden
+
+
+a
+ text-decoration none
+
+
+/* sweatalert2 */
+.confirmButtonClass {
+  outline: none;
+  font-size: 14px !important;
+  color: #e8e8e8 !important
+}
+
+.customClass .swal2-content {
+  color: #e8e8e8!important
+}
+
+
+/* element-react */
+// table css
+.el-table__body {
+  width:100%!important;
+}
+
+.el-table__body-wrapper{
+  overflow-x: hidden;
+}
+
+.el-table .cell
+  white-space:nowrap
+  background-color transparent
+  color $el-table-rowColor
+
+.el-table th
+  background-color $el-table-rowBg
+
+// 自定义 row className
+.el-table .rowClass
+  background-color $el-table-rowBg
+  color $el-table-rowColor
+
+
+.el-table--enable-row-hover .el-table__body tr:hover>td
+  background-color #5a5a5a
+  color #e8e8e8
